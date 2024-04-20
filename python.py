@@ -17,6 +17,7 @@ def change_it(list, i):
         list[i] = 0
         
     return list
-print(dtb(10, 2))
-number = 10 & (1 << 1)
-print(dtb(number, 2))
+
+def right2b(number):
+    return (number >> 1) & 1
+print(right2b(85))
